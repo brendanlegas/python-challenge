@@ -55,3 +55,13 @@ print(f"Total: ${total}")
 print(f"Average Change: ${averageChange}")
 print(f"Greatest Increase in Profits: {dataDict[(greatestIncrease)]} (${greatestIncrease})")
 print(f"Greatest Decrease in Profits: {dataDict[(greatestDecrease)]} (${greatestDecrease})")
+
+f = open("Financial_Analysis.txt", "w+")
+f.write("Financial Analysis\n")
+f.write("-------------------------------\n")
+f.write(f"Total Months: {count}\n")
+f.write(f"Total: ${total}\n")
+f.write(f"Average Change: ${averageChange}\n")
+f.write(f"Greatest Increase in Profits: {dataDict[(greatestIncrease)]} (${greatestIncrease})\n")
+f.write(f"Greatest Decrease in Profits: {dataDict[(greatestDecrease)]} (${greatestDecrease})\n")
+
