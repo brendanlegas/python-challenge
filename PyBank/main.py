@@ -47,6 +47,12 @@ with open(budget_csv) as csvfile:
     #calculate greatest decrease
     greatestDecrease = min(changes)
 
+    aggregate_changes = sum(changes)-867884
+    length_changes = len(changes)-1
+
+    averageChange = "{:.2f}".format(float(aggregate_changes/length_changes))
+
+
 #Print out Financial Analysis
 print("Financial Analysis")
 print("-------------------------------")
